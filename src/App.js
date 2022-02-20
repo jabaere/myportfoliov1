@@ -40,13 +40,13 @@ const CanvasContainer = styled.div`
 `;
 const PText = styled.p`
   text-align: center;
-  color: orange;
+  color:#000000;
 `;
 const H1Text = styled.h1`
   text-align: center;
-  color: orange;
+  color:#000000;
   font-size: 38px;
-  font-family: "Segoe UI", Roboto;
+  font-family: 'Roboto', sans-serif;
 `;
 
 const HtmlContentChild = styled.div`
@@ -60,7 +60,7 @@ const HtmlContentChild = styled.div`
   min-width: 380px;
 `;
 const Warning = styled.p`
-  color: red;
+  color: #F7FD04;
   font-size: 14px;
 `;
 //#f15946;
@@ -76,14 +76,14 @@ function App() {
   useEffect(() => void onScroll({ target: scrollArea.current }), []);
   return (
     <CanvasContainer id="fullPage">
-      <Suspense fallback={<Loading type="cylon" color="orange" />}>
+      
         <Canvas
           camera={{ position: [0, 0, 20], fov: 15, near: 10, far: 1000 }}
           dpr={[1, 1.5]}
           gl={{ alpha: false, antialias: true }}
           onCreated={({ gl, events }) => {
             gl.setClearColor("white");
-            gl.toneMappingExposure = 1;
+            gl.toneMappingExposure = 0.5;
             gl.toneMappingWhitePoint = 1;
 
             // Export canvas events, we will put them onto the scroll area
@@ -94,8 +94,9 @@ function App() {
         >
           <color
             attach="background"
-            args={["#121C1A"]} //'#191920'
+            args={["#66806A"]} //'#191920'
           />
+          <Suspense fallback={<Loading2 style={{color: '#000000', textAlign:'center'}}/>}>
 
           <Block factor={1.5} offset={0}>
             <Model
@@ -134,24 +135,25 @@ function App() {
               </HtmlContentChild>
             </HtmlContent>
           </Block>
-          <Block factor={2} offset={1}>
+          <Block factor={2.5} offset={0.5}>
             <Html center portal={domContent}>
               <AboutMe />
             </Html>
           </Block>
 
-          <Block factor={3} offset={4.8} id="projects">
+          <Block factor={3} offset={0.8} id="projects">
             <Html center portal={domContent}>
               <Projects />
             </Html>
           </Block>
-          <Block factor={5} offset={8.2} id="contact">
+          <Block factor={5} offset={2.9} id="contact">
             <Html center portal={domContent}>
               <Contact />
             </Html>
           </Block>
+          </Suspense>
         </Canvas>
-      </Suspense>
+    
       <div
         className="scrollArea"
         ref={scrollArea}

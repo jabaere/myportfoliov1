@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Shizuru&family=Supermercado+One&display=swap');
 * {
   box-sizing: border-box;
@@ -70,25 +71,25 @@ margin-top: -470px;
 }
 .htmlContent{
 
-  color:orange
+  color:#334756
 }
 h2,p,h3{
   text-align:center;
   
 }
 h2,h3{
-  color:orange;
+  color:#000000;
   font-family: 'Shizuru', cursive;
   font-size: 28px
 }
 
 a{
   text-decoration: none;
-  color:#71A59A
+  color:#142F43
 }
 
 p{
-  color:antiquewhite;
+  color:#161616;
   font-family: 'Supermercado One', cursive;
 }
 h4 + p {
@@ -102,6 +103,11 @@ h4 + p {
   height: 100vh;
   width:100px;
 }
+.progress{
+ 
+  margin:25% auto;
+  width:100px;
+}
 
 
 
@@ -109,14 +115,16 @@ h4 + p {
   h2,h3{
     font-size: 22px
   }
+  
 
   #contact{
-    margin-top: -3350px;
+    margin-top: 4500px;
     margin-bottom: 50px
   }
   #projects{
-    margin-top: -1550px
+    margin-top: 1550px
   }
+  
 }
 /*
 @media screen and (min-width:521px) and (max-width: 1025px){

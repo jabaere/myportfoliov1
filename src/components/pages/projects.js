@@ -8,6 +8,7 @@ import ProjectCard from "../layout/projectCards";
 
 const ProjectsDiv = styled.div`
   width: 90vw;
+  height:10px;
 `;
 
 const ProjectsContainer = styled.div`

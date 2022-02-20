@@ -16,6 +16,7 @@ export const Contact = () => {
       <IconsContainerParent>
         <p>Email: kobriashvili@gmail.com</p>
         <p> Mobile: +995 551 10 40 11</p>
+        <p>co-creator: erekle</p>
       </IconsContainerParent>
     </About>
   );

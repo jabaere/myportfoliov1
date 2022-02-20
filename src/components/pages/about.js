@@ -24,14 +24,14 @@ import DownloadButton from "../layout/downloadButton";
 
 const About = styled.div`
   width: 90vw;
-  margin-top: 250px;
+  height:10px
 `;
 
 const IconsContainer = styled.div`
  width:100%;
  display:flex;
  justify-content:space-between;
- color:antiquewhite;
+ color:#161616;;
  @media only screen and (max-width: 520px) {
     flex-direction: column;
     height: 300px;
@@ -145,7 +145,7 @@ export const AboutMe = () => {
     <About id="about">
       <h2>About</h2>
       <p>
-        I'm jaba 31 years old. I started learn JavaScript and React
+        I'm jaba 31 years old. I am started learn JavaScript and React
         approximately 1 years ago.
         <br />I think this is job Which I enjoy doing.
       </p>

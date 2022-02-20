@@ -48,7 +48,7 @@ export function Model({
     >
       <ambientLight intensity={0.1} />
       <directionalLight position={[0, -1, 0]} />
-      <spotLight intensity={0.2} position={[0, -1, 0]} />
+      <spotLight intensity={0.2} position={[-1, -1, -1]} />
       <mesh>
         <primitive object={gltf.scene} dispose={null} />
       </mesh>

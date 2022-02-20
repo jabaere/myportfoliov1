@@ -9,7 +9,7 @@ const DownloadButton = props => {
       
     }
     return (
-              <p onClick={downloadFile} style={{cursor:'pointer',color:'red'}}> Download CV</p>
+              <p onClick={downloadFile} style={{cursor:'pointer',color:'#F7FD04'}}> Download CV</p>
     )
   }
   export default DownloadButton;
